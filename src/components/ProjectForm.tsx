@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,7 +11,7 @@ import { toast } from "@/components/ui/use-toast";
 import { ChevronRight, Loader2 } from "lucide-react";
 
 const projectSchema = z.object({
-  prompt: z.string().min(10, "Prompt must be at least 10 characters").max(1000, "Prompt can't exceed 1000 characters"),
+  prompt: z.string().min(10, "Prompt must be at least 10 characters"),
   userId: z.string().optional(),
 });
 
